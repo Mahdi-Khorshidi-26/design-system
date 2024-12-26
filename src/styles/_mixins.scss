@@ -1,0 +1,98 @@
+// -- Media Queries --------------------------------------------
+// @import "variables";
+// Mixin to handle responsive design with custom breakpoints
+@mixin media-query($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: #{$breakpoint-xs}) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: #{$breakpoint-sm}) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: #{$breakpoint-md}) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: #{$breakpoint-lg}) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: #{$breakpoint-xl}) {
+      @content;
+    }
+  }
+}
+
+// -- Flexbox Helpers -----------------------------------------
+
+// Flexbox Centering - A simple and reusable mixin to center content horizontally and vertically
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Flexbox Row Layout - Flexbox row layout with wrap option
+@mixin flex-row($gap: $space-sm, $wrap: true) {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+  @if $wrap {
+    flex-wrap: wrap;
+  }
+}
+
+// -- Border Radius -----------------------------------------
+
+// Mixin for rounded corners with optional custom radius
+@mixin border-radius($radius: $border-radius-medium) {
+  border-radius: $radius;
+}
+
+// -- Box Shadow ------------------------------------------------
+
+// Reusable box shadow mixins
+@mixin box-shadow($shadow: $box-shadow-light) {
+  box-shadow: $shadow;
+}
+
+// -- Transitions ------------------------------------------------
+
+// A basic transition mixin to apply transition effects to an element
+@mixin transition(
+  $property: all,
+  $duration: $transition-medium,
+  $timing: ease-in-out
+) {
+  transition: $property $duration $timing;
+}
+
+// -- Typography ------------------------------------------------
+
+// Mixin for setting font-size and line-height for consistent typography
+@mixin typography(
+  $font-size: $font-size-base,
+  $line-height: $line-height-base
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// -- Margin and Padding ------------------------------------------------
+
+// Mixin for consistent padding and margin
+@mixin spacing($padding: $space-md, $margin: $space-md) {
+  padding: $padding;
+  margin: $margin;
+}
+
+// -- Flexbox Grid System -------------------------------------
+
+// Mixin for creating a simple 2-column layout
+@mixin column-grid($gap: $space-md, $columnCount: 2) {
+  display: grid;
+  grid-template-columns: repeat($columnCount, 1fr);
+  gap: $gap;
+}

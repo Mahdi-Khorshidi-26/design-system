@@ -1,0 +1,60 @@
+// _variables.scss
+// -- Colors ------------------------------------
+// Neutrals
+$white: #ffffff;
+$black: #000000;
+$gray-light: #f7f7f7;
+$gray: #bdc3c7;
+$gray-dark: #7f8c8d;
+
+// Background colors
+$background-light: #f5f5f5;
+$background-dark: #2c3e50;
+
+// -- Typography ---------------------------------
+$font-family-base: "Roboto";
+$font-size-base: 1.6rem;
+$font-size-small: 1.4rem;
+$font-size-large: 1.8rem;
+$line-height-base: 1.5rem;
+
+// -- Spacing (Padding & Margin) -------------------
+$space-xs: 0.4rem;
+$space-sm: 0.8rem;
+$space-md: 1.6rem;
+$space-lg: 3.2rem;
+$space-xl: 6.4rem;
+
+// -- Borders -------------------------------------
+$border-radius-small: 0.4rem;
+$border-radius-medium: 0.8rem;
+$border-radius-large: 1.6rem;
+$border-width: 0.1rem;
+$border-color: $gray-light;
+
+// -- Breakpoints (Responsive Design) -------------
+$breakpoint-xs: 320px; // Small devices (phones)
+$breakpoint-sm: 576px; // Small devices (tablets)
+$breakpoint-md: 768px; // Medium devices (tablets, laptops)
+$breakpoint-lg: 1024px; // Large devices (laptops)
+$breakpoint-xl: 1200px; // Extra-large devices (desktops)
+
+// -- Shadows -------------------------------------
+$box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+$box-shadow-dark: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+// -- Transitions ---------------------------------
+$transition-fast: 0.2s ease-in-out;
+$transition-medium: 0.4s ease-in-out;
+$transition-slow: 0.6s ease-in-out;
+
+// -- Z-Index -------------------------------------
+$z-index-modal: 1000;
+$z-index-dropdown: 900;
+$z-index-header: 100;
+$z-index-footer: 10;
+
+// -- Miscellaneous ------------------------------
+$max-width-container: 1200px;
+$max-height-container: 80vh;
