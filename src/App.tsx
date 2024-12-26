@@ -1,5 +1,7 @@
+import Container from "./utils/components/container";
+
 function App() {
-  return <div>hello Design system</div>;
+  return <Container>hello Design system</Container>;
 }
 
 export default App;
