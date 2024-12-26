@@ -1,0 +1,15 @@
+@mixin commonStyles {
+  width: 100%;
+  height: 100%;
+}
+
+.splitScreenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include commonStyles;
+}
+.left,
+.right {
+  @include commonStyles;
+}

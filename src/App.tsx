@@ -1,7 +1,11 @@
-import Container from "./utils/components/container";
+import Container from "./components/container/container";
 
 function App() {
-  return <Container>hello Design system</Container>;
+  return (
+    <Container>
+      <div>mahdi</div>
+    </Container>
+  );
 }
 
 export default App;
