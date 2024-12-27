@@ -2,7 +2,7 @@ import { gql, useQuery, QueryResult } from "@apollo/client";
 import React, { memo, ReactElement } from "react";
 import { ReactNodeType } from "../types/globalTypes";
 
-const GET_LOCATIONS = gql`
+export const GET_LOCATIONS = gql`
   query GetLocations {
     locations {
       id
